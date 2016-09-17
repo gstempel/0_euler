@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main() {
-
+int prob1() {
   //Multiples of 3 and 5
   int x = 999;
   int ret = 0;
@@ -15,9 +14,11 @@ int main() {
     }
     x--;
   }
+  return ret;
+}
 
-  printf(" %d ", ret);
+int main() {
 
-  //
+  printf("Problem One: %d \n", prob1());
 
 }
