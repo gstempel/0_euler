@@ -17,8 +17,27 @@ int prob1() {
   return ret;
 }
 
+int prob2() {
+  //Even Fibonacci numbers
+  int x = 1;
+  int y = 2;
+  int temp = 0;
+  int ret = 0;
+
+  while (y < 4000000) {
+    if (y % 2 == 0) {
+      ret += y;
+    }
+    temp = y;
+    y += x;
+    x = temp;
+  }
+  return ret;
+}
+
 int main() {
 
   printf("Problem One: %d \n", prob1());
+  printf("Problem Two: %d \n", prob2());
 
 }
